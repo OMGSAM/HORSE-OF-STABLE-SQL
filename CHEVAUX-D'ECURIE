@@ -1,0 +1,29 @@
+1// SELECT * FROM CHEVAL;
+SELECT * FROM PERSONNE;
+SELECT * FROM CONCOURS;
+SELECT * FROM RACE;
+SELECT * FROM TRANSACTION;
+ 
+
+2// SELECT * FROM CHEVAL
+WHERE race = 'Arabian'
+ORDER BY nom_cheval DESC;
+
+
+3// SELECT nom_cheval, taille, type, poids_type
+FROM CHEVAL
+WHERE race = 'Arabian';
+
+
+4// SELECT DISTINCT proprietaire
+FROM CHEVAL;
+
+
+5// SELECT NOM
+FROM  personne
+WHERE id_personne NOT IN (SELECT DISTINCT id_superieur FROM PERSONNE );
+
+
+6// SELECT *
+FROM concours
+WHERE YEAR(date_concours) = 2019;
